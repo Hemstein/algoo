@@ -1,10 +1,20 @@
-count := 0; x := 3;
-WHILE (count < 3) DO
-    count := count + 1;
-    y := (1+2*count) % 3;
-    SWITCH (y) DO
-        default : 
-        case 0 : x := x-1; BREAK;
-        case 1 : x := x+5;
-    END_SWITCH
-END_WHILE
+
+ALGORITHM algorithm_name
+VAR
+ c=:CHAR:="haythem"
+i=:INTEGER:=0
+sum=:INTEGER:=0
+k=:INTEGER:=0
+p=:INTEGER:=0
+
+BEGIN
+    FOR i FROM 0 TO c length-1   DO
+        sum:=sum+1
+        if c[i]in{'a','e','o','i'} then
+        k=k+1
+
+         if c[i]=" " then
+        p=p+1
+    END_FOR
+    
+END
